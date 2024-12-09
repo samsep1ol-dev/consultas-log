@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsRugal's Leak!</title>
+    <link rel="stylesheet" href="files/css/style.css">
+</head>
+<body>
+    <div id="notificationContainer"></div>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                <img src="files/img/~logo.jpg" alt="Logo" class="logo"> <h2>OsRugal's Leaks!</h2>
+            </a>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-page="dashboard"><a href="#dashboard"><i class="fas fa-home"></i>🏠 INICIO</a></li>
+                <li data-page="analytics"><a href="#analytics"><i class="fas fa-chart-line"></i>🎯 CONSULTAR</a></li>
+                <li data-page="inventory"><a href="#inventory"><i class="fas fa-box"></i>📦 PLANOS</a></li>
+                <li data-page="settings"><a href="#settings"><i class="fas fa-shopping-cart"></i>⚙️ LOGIN</a></li>
+
+            </ul>
+        </nav>
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <i class="fas fa-search"></i>
+                </div>
+
+            </header>
+            <div id="dashboard" class="page-content active">
+                <div class="stats-grid">
+                    <div class="stat-card glow">
+                        <i class="fas fa-users"></i>
+                        <div class="stat-info">
+                            <h3>Usuarios</h3>
+                            <p>15 usuarios!</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glow">
+                        <i class="fas fa-shopping-bag"></i>
+                        <div class="stat-info">
+                            <h3>Consultas</h3>
+                            <p>online</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glow">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="stat-info">
+                            <h3>logs</h3>
+                            <p>+10 mil leaks logs</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glow">
+                        <i class="fas fa-percent"></i>
+                        <div class="stat-info">
+                            <h3>Growth</h3>
+                            <p>+24.5%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-tables">
+                        <div class="data-tables">
+                            <div class="table-card glow">
+                                <h3>🎯 OsRugal's Leaks</h3>
+                                <hr>
+                                <table>
+                                    <tbody id="topPagesBody" >
+                                        <div class="contentTabela">
+                                            <h1>MELHOR PAINEL DE LOGS da America Latina! 🇧🇷 </h1>
+                                            <br>
+                                            <div class="contentTabelaLista">
+                                            <h3>🚀  CONSULTAS DE LOGS 24/7 </h3>
+                                            <h3>♨️  CONSULTAS ANÔNIMAS </h3>
+                                            <h3>🚥  CONSULTAS SEM RISCO DE CAIR </h3>
+                                        </div>
+                                        <ul class="nav-links">
+                                        <li data-page="analytics"><a href="#analytics" style="text-align: center;"><i class="fas fa-chart-line"></i>🎯 CONSULTAR</a></li>
+                                        </ul>
+                                        </div>
+                                        
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="analytics" class="page-content">
+                <div class="data-tables">
+                    <div class="data-tables">
+                        <div class="table-card glow">
+                            <h3>🔐 Consultar Logs</h3>
+                            <hr>
+                            <table>
+                                <tbody id="topPagesBody">
+                                    <div class="contentTabela">
+                                        <h1>CONSULTAR LOGS!</h1>
+                                        <br>
+                                        <div class="contentTabelaLista" style="font-size: 12px; margin-top: -30px;">
+                                            <h3 id="logInfo">🚀 CONSULTAS DE LOGS 24/7 </h3>
+                                        </div>
+                                        <hr>
+                                        <!--CONULTA FORM-->
+                                        <div class="consulta-form-disable">
+                                            <div class="settings-container">
+                                                <div class="settings-card glow">
+                                                    <form id="accountSettingsForm">
+                                                        <div class="form-group">
+                                                            <label for="username">⛓️ URL</label>
+                                                            <input type="text" id="username" name="username" value="https://netflix.com">
+                                                        </div>
+                                                        <button type="button" class="btn-primary verificarLogin" id="btnConsultar">🎯 CONSULTAR</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="resultado" id="resultado">
+                                                <!-- As mensagens aparecerão aqui -->
+                                            </div>
+                                        </div>
+                                        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div id="inventory" class="page-content">
+                <div class="data-tables">
+                    <div class="data-tables">
+                        <div class="table-card glow">
+                            <h3>📦 PLANOS</h3>
+                            <hr>
+                            <table>
+                                <tbody id="topPagesBody">
+                                    <div class="contentTabela">
+                                        <h1>CONSULTAR LOGS!</h1>
+                                        <br>
+                                        <div class="contentTabelaLista" style="font-size: 12px; margin-top: -30px;">
+                                            <h3 id="logInfo">🚀 CONSULTAS DE LOGS 24/7 </h3>
+                                        </div>
+                                        <hr>
+                                        <!--CONULTA FORM-->
+                                        <div class="consulta-form-disable">
+                                            <div class="settings-container">
+                                                <div class="settings-card glow">
+                                                    <form id="accountSettingsForm">
+                                                        <div class="form-group">
+                                                            <label for="username">⛓️ URL</label>
+                                                            <input type="text" id="username" name="username" value="https://netflix.com">
+                                                        </div>
+                                                        <button type="button" class="btn-primary verificarLogin" id="btnConsultar">🎯 CONSULTAR</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="resultado" id="resultado">
+                                                <!-- As mensagens aparecerão aqui -->
+                                            </div>
+                                        </div>
+                                        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="settings" class="page-content">
+                <h1>LOGIN</h1>
+                <div class="settings-container">
+                    <div class="settings-card glow">
+                        <h3>Fazer login na sua conta</h3>
+                        <form id="accountSettingsForm">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" value="johndoe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" value="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">New Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <button type="submit" class="btn-primary">Save Changes</button>
+                        </form>
+                    </div>
+                    <div class="settings-card glow">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="124" height="124" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5 9 4V3m5 2 1-1V3m-3 6v11m0-11a5 5 0 0 1 5 5m-5-5a5 5 0 0 0-5 5m5-5a4.959 4.959 0 0 1 2.973 1H15V8a3 3 0 0 0-6 0v2h.027A4.959 4.959 0 0 1 12 9Zm-5 5H5m2 0v2a5 5 0 0 0 10 0v-2m2.025 0H17m-9.975 4H6a1 1 0 0 0-1 1v2m12-3h1.025a1 1 0 0 1 1 1v2M16 11h1a1 1 0 0 0 1-1V8m-9.975 3H7a1 1 0 0 1-1-1V8"/>
+                          </svg>
+                          
+                          <hr><br>
+                        <h2>SEM TOKEN!?</h2>
+                        <h3>COMPRE SEU TOKEN DE ACESSO PARA REALIZAR CONSULTAS!</h3>
+                        <ul class="nav-links">
+                            <li data-page="analytics"><a href="#analytics" style="text-align: center;"><i class="fas fa-chart-line"></i>♨️ COMPRAR TOKEN!</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+</body>
+
+<script src="files/js/javascript.js"></script>
+</html>
